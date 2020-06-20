@@ -70,7 +70,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8">
+        
+        <form action="POST" data-netlify="true" class="col-md-8">
           <div class="card p-4">
             <div class="card-body">
               <h3 class="text-center">Please fill out this form to contact us</h3>
@@ -78,12 +79,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="First Name">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Last Name">
+                    <input type="text" class="form-control" placeholder="Full Name">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -93,7 +89,17 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Phone Number">
+                    <input type="number" class="form-control" placeholder="Phone Number">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Upload payment Receipt</label>
+                    <input type="file" class="form-control" name="myfile" id="myfile" placeholder="Upload Payment Receipt">
+                  </div>
+                </div>
+                <div class="col-md-6" id="field">
+                  <div data-netlify-recaptcha="true" class="form-group">
                   </div>
                 </div>
               </div>
@@ -111,7 +117,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </section>
